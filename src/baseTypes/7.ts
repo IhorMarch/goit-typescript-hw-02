@@ -4,18 +4,18 @@
 */
 
 enum Week {
-  monday = 'work',
-  tuesday = 'work',
-  wednesday = 'work',
-  thursday = 'work',
-  friday = 'work',
-  saturday = 'weekend',
-  sunday = 'weekend'
+  monday ,
+  tuesday, 
+  wednesday ,
+  thursday ,
+  friday ,
+  saturday ,
+  sunday 
 
 }
 
 function isWeekend(day: Week): boolean {
-  return day === 'weekend'
+  return (day === Week.saturday||day === Week.sunday)
 }
 
 console.log(isWeekend(Week.saturday));
